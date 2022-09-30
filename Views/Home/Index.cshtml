@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="d-flex justify-content-center flex-column">
+    <h1 class="display-4 mx-auto">Random Generated Password #@Context.Session.GetInt32("Num_Generated")</h1>
+    <p class="card bg-light w-25 mx-auto">@Context.Session.GetString("Random_Password")</p>
+    <a href="/" class="btn btn-secondary w-25 mx-auto">Generate Password</a>
+</div>
